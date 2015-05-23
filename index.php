@@ -60,14 +60,14 @@
 					$first = '';
 					foreach ( $files as $key => $file ) {
 						if ( is_file( './templates' . '/' . $file ) ) {
-							if ( 'Reps-Card 1.html' === $file ) {
+							if ( 'FSA-Card.html' === $file ) {
 								unset( $files[$key] );
 							}
 						} else {
 							unset( $files[$key] );
 						}
 					}
-					$files[0] = 'Reps-Card 1.html';
+					$files[0] = 'FSA-Card.html';
 					ksort($files);
 					foreach ( $files as $file ) {
 						if ( empty( $first ) ) {
@@ -105,7 +105,7 @@
                 </div>
             </form>
 
-            <div id="footer"><br/>Created by fox lovers in Kerala | <a href="https://github.com/MozillaKerala/Card-Generator/">Grab the code</a> and improve it. | <a href="https://github.com/MozillaKerala/Card-Generator/tree/master#how-to-add-new-card-template">Add</a> a new card template.<br/><br/></div>
+            <div id="footer"><br/>Based on Mozilla Kerala Project | <a href="https://github.com/FFMilan/Card-Generator/">Grab the code</a> and improve it. | Template by Firefox Club Milano<br/><br/></div>
 
         </div>
 
